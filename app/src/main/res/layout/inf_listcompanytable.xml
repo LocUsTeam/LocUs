@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_roomnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="room 1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Change Availability : "/>
+        <Spinner
+            android:id="@+id/sp_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="TO"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/sp_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Spinner>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_subbmit"
+        android:text="Subbmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"/>
+
+</LinearLayout>

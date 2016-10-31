@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.magdy.locus.DetailsActivity"
+    android:background="#bdbdbd"
+    >
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:baselineAligned="false"
+        >
+
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/view_pager"
+        />
+
+     <TextView
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:id="@+id/layout_dots"
+          android:layout_below="@+id/view_pager"
+          android:layout_marginTop="2dp"
+          android:gravity="center"
+          android:orientation="horizontal"
+          />
+
+    <android.support.v7.widget.CardView
+
+        android:layout_below="@+id/layout_dots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:id="@+id/name"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zone"
+            android:id="@+id/title"
+            android:layout_gravity="center_horizontal"
+            android:textSize="35dp"
+            android:gravity="center_horizontal" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+
+        android:layout_below="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:id="@+id/details"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="details:"
+                android:id="@+id/des1"
+
+                android:textSize="20dp"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/description"
+            android:layout_below="@+id/des1"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+
+        android:layout_below="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FFF"
+        android:id="@+id/table"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/sched_title_layout"
+            >
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:id="@+id/iconsched"
+                android:src="@drawable/ic_assignment_black_24dp"
+                android:adjustViewBounds="true"
+                />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time schedule:"
+            android:layout_marginLeft="5dp"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            android:id="@+id/scheduletitle"
+
+            >
+
+            </TextView>
+
+    </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rooms_list"
+            android:layout_below="@+id/sched_title_layout"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+
+        android:layout_below="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+        android:id="@+id/map_link"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/location_layout"
+            >
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/iconlocation"
+
+                android:src="@drawable/ic_room_black_24dp"
+                android:adjustViewBounds="true"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="position on map:"
+                android:layout_marginLeft="5dp"
+                android:textSize="25dp"
+                android:layout_weight="1"
+                android:id="@+id/locationtitle"
+
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:layout_marginRight="10dp"
+            android:textSize="25dp"
+            android:layout_below="@+id/location_layout"
+            android:layout_marginTop="30dp"
+            android:gravity="right"
+            />
+
+        <Button
+            android:id="@+id/btn_opnemap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/location_layout"
+            android:layout_marginTop="30dp"
+            android:text="Map"/>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+
+        android:layout_below="@+id/map_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:id="@+id/features"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/tools_layout"
+            >
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/icontools"
+                android:src="@drawable/ic_build_black_24dp"
+                android:adjustViewBounds="true"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Available tools:"
+                android:layout_marginRight="5dp"
+                android:textSize="25dp"
+                android:layout_weight="1"
+                android:id="@+id/toolstitle"
+
+                >
+
+            </TextView>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+</ScrollView>
+  </RelativeLayout>

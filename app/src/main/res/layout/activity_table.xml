@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_table"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context="com.magdy.locus.TableActivity"
+    android:background="#e0e0e0">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table_header"
+        android:background="#f5f5f5">
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="الساعة"
+        android:id="@+id/time_hour"
+        android:layout_weight="1"
+        android:gravity="center"
+
+
+        />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="امكانية الحجز"
+            android:id="@+id/time_state"
+            android:layout_weight="0"
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_list"
+        android:layout_below="@+id/table_header"/>
+
+
+</RelativeLayout>

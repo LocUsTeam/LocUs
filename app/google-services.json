@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "746776050486",
+    "firebase_url": "https://locus-ae2a2.firebaseio.com",
+    "project_id": "locus-ae2a2",
+    "storage_bucket": "locus-ae2a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746776050486:android:2e5712b1eb778208",
+        "android_client_info": {
+          "package_name": "com.magdy.locus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746776050486-m6mmtld69di8paia1o00jr1chsln8996.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKeIdeTix5PYf3avHlM8EFtUr5pLXSp8w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746776050486:android:79d7b2a8f07efacd",
+        "android_client_info": {
+          "package_name": "com.magdy.locus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746776050486-m6mmtld69di8paia1o00jr1chsln8996.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKeIdeTix5PYf3avHlM8EFtUr5pLXSp8w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
